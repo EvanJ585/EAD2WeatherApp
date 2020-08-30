@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/cityWeatherTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/cityWeatherTitle"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cityInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/adamina"
+        android:hint="@string/cityInput"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/cityWeatherTitle"
+        app:layout_constraintStart_toStartOf="@+id/cityWeatherTitle"
+        app:layout_constraintTop_toBottomOf="@+id/cityWeatherTitle"
+        android:inputType= "text"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/cityBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cityBtn"
+        app:layout_constraintEnd_toEndOf="@+id/cityInput"
+        app:layout_constraintStart_toStartOf="@+id/cityInput"
+        app:layout_constraintTop_toBottomOf="@+id/cityInput" />
+
+    <TextView
+        android:id="@+id/currentConditionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/currentConditionTitle"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="@string/currentCondition"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/currentConditionTitle"
+        app:layout_constraintStart_toEndOf="@+id/currentConditionTitle"
+        app:layout_constraintTop_toTopOf="@+id/currentConditionTitle" />
+
+    <TextView
+        android:id="@+id/minTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/minTemp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minTempTitle" />
+
+    <TextView
+        android:id="@+id/celcius1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="@string/celcius"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/minTemp"
+        app:layout_constraintStart_toEndOf="@+id/minTemp"
+        app:layout_constraintTop_toTopOf="@+id/minTemp"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/maxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/maxTemp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/celcius1"
+        app:layout_constraintTop_toBottomOf="@+id/maxTempTitle" />
+
+    <TextView
+        android:id="@+id/celcius2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="@string/celcius"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/maxTemp"
+        app:layout_constraintStart_toEndOf="@+id/maxTemp"
+        app:layout_constraintTop_toTopOf="@+id/maxTemp" />
+
+    <TextView
+        android:id="@+id/minTempTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/minTempTitle"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentConditionTitle" />
+
+    <TextView
+        android:id="@+id/maxTempTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/maxTempTitle"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentConditionTitle" />
+
+    <TextView
+        android:id="@+id/windDirectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="408dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/windDirectionTitle"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/windDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="@string/windDirection"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/windDirectionTitle"
+        app:layout_constraintStart_toEndOf="@+id/windDirectionTitle"
+        app:layout_constraintTop_toTopOf="@+id/windDirectionTitle" />
+
+    <TextView
+        android:id="@+id/windSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/windSpeed"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/windSpeedTitle" />
+
+    <TextView
+        android:id="@+id/Kmh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="@string/Kmh"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/windSpeed"
+        app:layout_constraintStart_toEndOf="@+id/windSpeed"
+        app:layout_constraintTop_toTopOf="@+id/windSpeed" />
+
+    <TextView
+        android:id="@+id/windSpeedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="123dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/windSpeedTitle"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/windDirectionTitle" />
+
+    <TextView
+        android:id="@+id/outlookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginBottom="98dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/outlookTitle"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/outlook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="@string/outlook"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/outlookTitle"
+        app:layout_constraintStart_toEndOf="@+id/outlookTitle"
+        app:layout_constraintTop_toTopOf="@+id/outlookTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

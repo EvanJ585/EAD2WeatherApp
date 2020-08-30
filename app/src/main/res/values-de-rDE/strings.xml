@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wetterkontrolle</string>
+    <string name="cityWeatherTitle">Überprüfen Sie das Wetter in Ihrer Stadt!</string>
+    <string name="cityInput">Stadtname</string>
+    <string name="cityBtn">Stadt betreten</string>
+    <string name="currentConditionTitle">Aktuelle Bedingungen:</string>
+    <string name="currentCondition">Prüfung</string>
+    <string name="minTemp">0</string>
+    <string name="celcius">°C</string>
+    <string name="maxTemp">0</string>
+    <string name="minTempTitle">Mindesttemp</string>
+    <string name="maxTempTitle">Max Temp</string>
+    <string name="windDirectionTitle">Der Wind kommt von</string>
+    <string name="windDirection">Prüfung</string>
+    <string name="windSpeed">0</string>
+    <string name="Kmh">Km/h</string>
+    <string name="windSpeedTitle">Windgeschwindigkeit</string>
+    <string name="outlookTitle">aktueller Ausblick</string>
+    <string name="outlook">Prüfung</string>
+    <string name="englishMenu">Englisch</string>
+    <string name="frenchMenu">Französisch</string>
+    <string name="germanMenu">Deutsche</string>
+</resources>

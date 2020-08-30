@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather Checker</string>
+    <string name="cityWeatherTitle">Check the weather in your city!</string>
+    <string name="cityInput">City Name</string>
+    <string name="cityBtn">Enter City</string>
+    <string name="currentConditionTitle">Current Conditions:</string>
+    <string name="currentCondition">test</string>
+    <string name="minTemp">0</string>
+    <string name="celcius">°C</string>
+    <string name="maxTemp">0</string>
+    <string name="minTempTitle">Min Temp</string>
+    <string name="maxTempTitle">Max Temp</string>
+    <string name="windDirectionTitle">Wind is coming from the</string>
+    <string name="windDirection">test</string>
+    <string name="windSpeed">0</string>
+    <string name="Kmh">Km/h</string>
+    <string name="windSpeedTitle">Wind Speed</string>
+    <string name="outlookTitle">Current Outlook:</string>
+    <string name="outlook">test</string>
+    <string name="englishMenu">English</string>
+    <string name="frenchMenu">French</string>
+    <string name="germanMenu">German</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vérificateur météo</string>
+    <string name="cityWeatherTitle">Vérifiez la météo dans votre ville!</string>
+    <string name="cityInput">Nom de Ville</string>
+    <string name="cityBtn">Entrez la ville</string>
+    <string name="currentConditionTitle">Conditions actuelles:</string>
+    <string name="currentCondition">tester</string>
+    <string name="minTemp">0</string>
+    <string name="celcius">°C</string>
+    <string name="maxTemp">0</string>
+    <string name="minTempTitle">temp mini</string>
+    <string name="maxTempTitle">Temp max</string>
+    <string name="windDirectionTitle">Le vent vient de</string>
+    <string name="windDirection">tester</string>
+    <string name="windSpeed">0</string>
+    <string name="Kmh">Km/h</string>
+    <string name="windSpeedTitle">Vitesse du vent</string>
+    <string name="outlookTitle">perspectives actuelles</string>
+    <string name="outlook">tester</string>
+    <string name="englishMenu">Anglais</string>
+    <string name="frenchMenu">Français</string>
+    <string name="germanMenu">Allemand</string>
+</resources>
