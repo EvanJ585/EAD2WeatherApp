@@ -4,7 +4,7 @@
     <string name="cityWeatherTitle">Check the weather in your city!</string>
     <string name="cityInput">City Name</string>
     <string name="cityBtn">Enter City</string>
-    <string name="currentConditionTitle">Current Conditions:</string>
+    <string name="currentConditionTitle">"Current Conditions: "</string>
     <string name="currentCondition">test</string>
     <string name="minTemp">0</string>
     <string name="celcius">°C</string>
